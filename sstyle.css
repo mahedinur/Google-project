@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px
+
+}
+section header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section header ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+section header button{
+    padding: 8px 14px;
+    background-color: #4584ef;
+    border: none;
+    border-radius: 1px solid;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+    margin-left:5px ;
+
+}
+section header button:hover{
+    background-color: gray;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+}
+.main .searchbox{
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+
+}
+.main .searchbox .search{
+    width: 89%;
+    position: absolute;
+    padding: 13px;
+    padding-left: 69px;
+    padding-right: 60px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    
+
+}
+
+    
+
+.main .icons{
+    width: 105%;
+    position: absolute;
+    top: -4;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 12px 20px;
+    pointer-events: none;
+}
+.main .buttons{
+    margin-top: 60px;
+
+}
+.main button{
+    margin: 10px;
+    padding: 7px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 13px;
+}
+.main .lang{
+    margin-top: 3px;
+    font-size: 15px;
+}
+section .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
+
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 0, 0, 0);
+    
+}
+.row ul{
+    display: flex;
+    list-style: none;
+}
+.row ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.main button:hover{
+    background-color: gray;
+}
+/* Mobile View */
+@media (max-width:768px){
+    .main .searchbox .search{
+
+        width: 60%;
+    }
+    .main .icons{
+        width: 335px;
+    }
+    .row ul{
+        display: block;
+        
+    }
+
+
+}
