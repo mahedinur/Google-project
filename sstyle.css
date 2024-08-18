@@ -135,17 +135,70 @@ section .footer{
 }
 /* Mobile View */
 @media (max-width:768px){
-    .main .searchbox .search{
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        width: 100%;
+        height: auto;
 
-        width: 60%;
     }
-    .main .icons{
-        width: 335px;
+    section header button{
+        width: 55px;
+        height: 28px;
+        font-size: 8px;
+        font-weight: bold;
+        margin-left: 0;
     }
-    .row ul{
-        display: block;
+    section header ul{
+        width: 249px;
+    }
+    section header ul li a img{
+        width: 23px;
+        margin: 2px;
         
     }
+    section header ul li a{
+        margin: 7px;
+        font-size: 13px;
+    }
+    .main .im1{
+        width: 241px;
 
-
+    }
+    .main .searchbox .search {
+        width: 112px;
+        outline: 0;
+    }
+    .main .searchbox .mic{
+        position: relative;
+        right: 55px;
+    }
+    .main .searchbox .search2 img{
+        height: 18px;
+    }
+    .main .buttons button{
+        width: 80px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .main .lang {
+        width: 114px;
+        font-size: 12px;
+    }
+    section .footer{
+        width: 255px;
+        height: 61px;
+        font-size: 8px;
+        
+    }
+    section .footer .row{
+        display: block;
+        margin-left: -5px;
+        margin-top: -1px;
+    }
+    section .footer .row ul{
+        padding: 6px;
+    }
 }
